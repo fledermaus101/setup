@@ -58,7 +58,7 @@ alias l='ls --color=auto -lAh'
 alias la='ls --color=auto -lisAh'
 EOF
 # Sckill alias
-cat > /usr/local/sbin/sckill <<EOF
+cat > /usr/local/bin/sckill <<EOF
 #!/bin/bash
 if [ -n "$1" ]; then
    screen -S "$1" -X quit
@@ -77,5 +77,5 @@ done
 ##########################
 # Add execute permission #
 ##########################
-chmod +x /usr/local/sbin/sckill
+chmod +x /usr/local/bin/sckill
 chmod +x /home/*
